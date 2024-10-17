@@ -1,43 +1,36 @@
-
 @import 'variaveis';
 
-*{
+* {
     margin: 0;
-    padding: 0; 
+    padding: 0;
 }
 
-
-header{
+header {
     text-align: center;
     color: $cor-das-letras;
     font-size: 70px;
-
 }
 
-#Fundo-1{
+#Fundo-1 {
     background-image: url(../img/zm2zfxjmTtO9wDaf5IfetQ.webp);
     background-repeat: no-repeat;
     background-size: cover;
-    font-family:"Inter", sans-serif;
+    font-family: "Inter", sans-serif;
     background-position: center;
-
 }
 
-#principal{
+#principal {
     display: flex;
     align-items: center;
-    font-family:"Inter", sans-serif;
+    font-family: "Inter", sans-serif;
 
-    
-    .texto-1{
-        color: $cor-das-letras;    
-        
-        h2{ 
+    .texto-1 {
+        color: $cor-das-letras;
 
+        h2 {
             text-align: center;
             font-size: 60px;
             font-weight: bolder;
-            
         }
 
         display: flex;
@@ -45,57 +38,160 @@ header{
     }
 }
 
-#filmes{   
-
-
+#filmes {
     background-image: url(../img/rZazNeuCTWGW8wnPYSa8LA.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    font-family:"Inter", sans-serif;
+    font-family: "Inter", sans-serif;
     color: $cor-das-letras;
 
-
-    h1{
+    h1 {
         padding-top: 300px;
         text-align: center;
         font-size: 60px;
     }
 
-    h2{
+    h2 {
         text-align: center;
     }
 
-    p{
+    p {
         text-align: center;
         font-size: 20px;
     }
 
     .amostras {
         display: flex;
-        align-items: center; 
-        justify-content: center; 
-        height: 200px; 
+        align-items: center;
+        justify-content: center;
+        height: 200px;
         gap: 30px;
         padding-top: 300px;
         padding-bottom: 300px;
-  
+
+        .filme1 img {
+            max-width: 200px;
+        }
+
+        .filme2 img {
+            max-width: 200px;
+        }
+
+        .filme3 img {
+            max-width: 200px;
+        }
+    }
+}
+
+/* Estilos para celulares */
+@media (max-width: 768px) {
+
+    header {
+        text-align: center;
+        font-size: 40px;
+        color: $cor-das-letras;
+    }
+
+    #Fundo-1 {
+        background-size: cover;
+        background-position: center;
+    }
+
+    #principal {
+        display: flex;
+        flex-direction: column;
+        font-family: "Inter", sans-serif;
+    }
+
+    #principal img {
+        width: 100%;
+        max-width: 100px;
+        height: auto;
+    }
+
+    .texto-1 {
+        color: $cor-das-letras;   
+    }
+
+    
+    #principal .texto-1 h2 {
+        margin-top: 20px;
+        font-size: 20px !important;
+        margin-bottom: 20px;
         
-    .filme1 img{
+    }
+
+    #principal .texto-1 p {
+        font-size: 12px !important;
+        
+    }
+
+    #filmes h1{
+        font-size: 30px;
+        padding-top:100px;
+    }
+
+    #filmes .amostras{
+        display: flex;
+        flex-direction: column;
+        transform: scale(0.40);
+        
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    header {
+        text-align: center;
+        font-size: 40px;
+        color: $cor-das-letras;
+    }
+
+    #Fundo-1 {
+        background-size: cover;
+        background-position: center;
+    }
+
+    #principal {
+        display: flex;
+        flex-direction: column;
+        font-family: "Inter", sans-serif;
+    }
+
+    #principal img {
+        width: 100%;
         max-width: 200px;
+        height: auto;
     }
 
     
-    .filme2 img{
-        max-width: 200px;
+    .texto-1 {
+        color: $cor-das-letras;   
     }
-    
-    .filme3 img{
-        max-width: 200px;
+   
+    #principal .texto-1 h2 {
+        margin-top: 20px;
+        font-size: 30px !important;
+        margin-bottom: 20px;
+        
     }
 
+    #principal .texto-1 p {
+        font-size: 20px !important;
+        
     }
 
+    #filmes h1{
+        font-size: 40px;
+        padding-top:100px;
+    }
 
+    #filmes .amostras{
+        display: flex;
+        flex-direction: column;
+        transform: scale(0.50);
+        
+    }
 
 }
